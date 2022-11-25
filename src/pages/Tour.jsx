@@ -148,10 +148,11 @@ function Tour() {
                                             ></textarea>
                                         </div>
                                         <button
+                                            disabled={!user}
                                             onClick={handleSubmit}
                                             className="bg-[#ffc800] px-10 py-2 mt-4 font-josefin font-bold"
                                         >
-                                            Submit
+                                            {user ? "Submit" : "Login first to give review"}
                                         </button>
                                     </div>
                                 </div>
